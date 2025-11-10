@@ -9,7 +9,7 @@ class CreditScoringModel(nn.Module):
 
         self.num_features = num_features
         self.hidden_layers = hidden_layers
-        self.dropout_reate = dropout_rate
+        self.dropout_rate = dropout_rate
         self.use_batch_norm = use_batch_norm
         self.activation_fn = activation_fn
 
@@ -92,7 +92,7 @@ class CreditScoringModel(nn.Module):
         return {
             "model_type": "CreditScoringModel",
             "num_features": self.num_features,
-            "dropout_reate": self.dropout_reate,
+            "dropout_rate": self.dropout_rate,
             "use_batch_norm": self.use_batch_norm,
             "activation_fn": self.activation_fn,
             "architecture": {
